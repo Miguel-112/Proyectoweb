@@ -6,6 +6,7 @@ from .models import Servicios
 # Register your models here.
 
 
+
 class ServicioAdmin(admin.ModelAdmin):
     
    readonly_fields=('created','update')
