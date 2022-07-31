@@ -14,7 +14,7 @@ urlpatterns = [
    
     path('tienda',views.tienda, name="Tienda"),
    
-    path('contacto',views.contacto, name="Contacto"),
+   
 
 ]
 
