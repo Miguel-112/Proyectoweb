@@ -1,3 +1,4 @@
+from distutils.command.upload import upload
 from email.headerregistry import ContentDispositionHeader
 from tabnanny import verbose
 from tkinter import image_names
@@ -8,7 +9,7 @@ from django.db import models
 class Servicios(models.Model):
     titulo=models.CharField(max_length=50)
     contenido=models.CharField(max_length=50)
-    imagen=models.ImageField()
+    imagen=models.ImageField(upload_to='servicios') # nos guarda la imagen en media y nos crea la carpeta servicio
     created=models.DateTimeField(auto_now_add=True)
     update=models.DateTimeField(auto_now_add=True)
 

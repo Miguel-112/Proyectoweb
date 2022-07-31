@@ -120,6 +120,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+MEDIA_URL='Proyectoweb/media/' # se usa para decirle a django donde debe guardar las imagenes
+MEDIA_ROOT=BASE_DIR / 'Proyectoweb/media'# esta tambien se usa  para decirle a django donde debe guardar las imagenes
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
