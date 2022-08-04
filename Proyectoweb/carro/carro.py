@@ -12,7 +12,7 @@ class Carro:
         if not carro:
 
             carro=self.session["carro"]={}
-            self.carro=carro
+        self.carro=carro
 
     def agregar(self, producto):
 
@@ -23,13 +23,14 @@ class Carro:
                 "nombre":producto.nombre,
                 "precio":str(producto.precio),
                 "cantidad":1,
-                "imagen":producto.imag.url
+                "imagen":producto.imagen.url
 
         }
         else:
             for key, value in self.carro.items():
                 if key==str(producto.id):
                     value["cantidad"]=value["cantidad"]+1
+                    value["precio"]=float(value["precio"])+producto.precio
                     break
 
         self.guardar_carro()
@@ -51,6 +52,7 @@ class Carro:
         for key, value in self.carro.items():
                 if key==str(producto.id):
                     value["cantidad"]=value["cantidad"]-1
+                    value["precio"]=float(value["precio"])-producto.precio
                     if value["cantidad"]<1:
                        self.eliminar(producto)
                     break
