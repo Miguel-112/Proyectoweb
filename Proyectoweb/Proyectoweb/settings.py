@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'tienda',
     'carro',
     'autenticacion',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +146,6 @@ EMAIL_HOST_PASSWORD="msmcdmpxofggnoac"
 
 # EMAIL_HOST_USER="msardo@unicesar.edu.co"
 # EMAIL_HOST_PASSWORD="hmdkbooumdenfrfs"
+
+
+CRYSPY_TEMPLATE_PACK='booststrap4'
