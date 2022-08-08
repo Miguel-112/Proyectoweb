@@ -57,14 +57,26 @@
                 Total: {{importe_total_carro}} $
 
             </td>
-            <td colspan="3">
-                <div class="d-grid gap-2">
-                    <a class="btn btn-primary" type="button">Comprar</a>
-                    
-                  </div>
-            </td>
+
+           
             
         </tr>
+
+        {% if request.session.carro.items %}
+
+
+        <tr>
+            <td colspan="3" style="text-align:center ;" >
+                    
+                    <a href="../pedidos" class="btn btn-primary btn-block" type="button">Comprar</a>
+                    
+            
+            </td>
+       
+
+         
+        </tr>
+        {% endif %}    
     </tfoot>
 
 
