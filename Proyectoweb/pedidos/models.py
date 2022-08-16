@@ -1,5 +1,5 @@
 from django.db import models
-from tabnanny import verbose
+
 
 from django.contrib.auth import get_user_model
 
@@ -53,4 +53,4 @@ class LineaPedidos(models.Model):
         db_table='lineapedidos'
         verbose_name='Linea Pedido'
         verbose_name_plural='Linea pedidos'
-        ordering=['id'] #se ordenan por id
+        ordering=['id'] #se ordenan por id|

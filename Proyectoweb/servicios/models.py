@@ -1,8 +1,8 @@
 from distutils.command.upload import upload
 from email.headerregistry import ContentDispositionHeader
 from tabnanny import verbose
-from tkinter import image_names
 from django.db import models
+
 
 # Create your models here.
 
